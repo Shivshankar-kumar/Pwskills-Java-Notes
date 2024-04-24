@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onsubmit Event</title>
+    <script type="text/javascript">
+        function validate(){
+            var fname=document.myform.sfName.value;
+            var lname=document.myform.slName.value;
+            if(fname==" "){
+                alert("Please! fill first name proper");
+                myform.sfName.focus();
+                return false;
+            }
+            if(lname==" "){
+                alert("Please! Enter last name proper");
+                myform.lname.focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body bgcolor="yellow">
+    <center>
+        <h3><b>Student Details</b></h3>
+        <form name="myform">
+        <table border="3" width="20%">
+            <tr>
+                <td><b>First Name</b></td>
+                <td><input type="text" name="sfName" size="15" placeholder="fisrt name"></td>
+            </tr>
+            <tr>
+                <td><b>Last Name</b></td>
+                <td><input type="text" name="slName" size="15" placeholder="last name"></td>
+            </tr>
+            <tr>
+                <td><b>Mobile</b></td>
+                <td><input type="text" name="mob" size="15"></td>
+            </tr>
+            <tr>
+                <td><b>E-mail</b></td>
+                <td><input type="email" name="email" size="15"></td>
+            </tr>
+            <tr>
+                <td><b>Gender</b></td>
+                <!-- <b><td><option>Male</option></b> -->
+                    <td><b>Male</b>
+                <input type="radio" name="gender" size="15">
+                <!-- <b><option>Female</option></b> -->
+                <b>Female</b>
+                    <input type="radio" name="gender" size="15">
+                    </td>
+              </td>
+            </tr>
+            <tr>
+                <td><b>Nationality</b></td>
+                <!-- <td><input type="text" name="nationality" size="15"></td> -->
+                <td><select>
+                    <option>Indian</option>
+                    <option>Other</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td><b>State</b></td>
+                <!-- <input type="select" name="state" size="15"> -->
+                <td>
+                <select>
+                    <option selected value="UP">Uttarpradesh</option>
+                    <option>Asam</option>
+                    <option>Bihar</option>
+                    <option>Rajasthan</option>
+                    <option value="UP">Uttarpradesh</option>
+                    <option>Jharkhand</option>
+                    <option>Himanchal pradesh</option>
+                    <option value="MP">Madhyapradesh</option>
+                    <option>Other</option>
+                </select>
+                </td>
+                </tr>
+                <tr>
+                    <td><b>Distric</b></td>
+                    <td><input type="text" name="distric" size="15"></td>
+                </tr>
+                <tr>
+                    <td><b>City</b></td>
+                    <td><input type="text" name="city" size="15"></td>
+                </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" value="Submit" onsubmit="return validate()" method="post">
+                <input type="reset" value="Clear" size="15">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </center>
+    
+</body>
+</html>

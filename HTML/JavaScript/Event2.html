@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum|Event</title>
+    <script type="text/javascript">
+        //function definition
+        function sum(form){
+            var n1=eval(form.t1.value);
+            var n2=eval(form.t2.value);
+            res=n1+n2;
+            form.result.value=res;
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Perform addition only</h1>
+    </center>
+    <center>
+    <form name="myform">
+            <table border="8" bgcolor="green" width="40%">
+                <tr>
+                    <b><td>Enter the first Number:</td></b>
+                    <td><input type="text" name="t1" size="25" placeholder="only 1,2,3...accept"></td>
+                </tr>
+                <tr>
+                    <b><td>Enter the second Number:</td></b>
+                    <td><input type="text" name="t2" size="25" placeholder="only 1,2,3...accept"></td>
+                </tr>
+                <tr>
+                    <b><td>Result:</td></b>
+                    <td><input type="text" name="result" size="25">
+                </tr>
+       </td>         <tr>
+                    <td></td>
+                    <td><input type="button" value="sum" onclick="sum(this.form)"></td>
+               </tr>
+            </table>
+        </form>
+        </center>
+</body>
+</html>

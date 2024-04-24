@@ -1,0 +1,49 @@
+/* Universal Selecter apply which is Estrict */
+/* *{
+    background-color: rgb(172, 169, 175);
+} */
+/* Color apply on heading tab which is h1 */
+/* class Selecter */
+.BorderClass{
+    color: rgb(205, 50, 50);
+    font-size: 25px;
+}
+/* Id selecter all id written with #Symbol */
+#change{
+    background-color: red;
+    /* color :rgb(208, 255, 0); */
+}
+/* Group Selecter */
+#change, ol{
+    font-size: 40;
+    color:white;
+    background-color: black;
+}
+/* Class Selecter BorderClass is name which is define by user */
+.BorderClass {
+    border: 30px solid rgb(43, 0, 255) ;
+    font-size: 30;
+    margin: 11px;
+    padding: 40px;
+}
+.BorderClass1 {
+    text-align: center;
+    color: red;
+    border: 30px solid rgb(43, 0, 255) ;
+    font-size: 30;
+    margin: 11px;
+    scroll-padding-block-end:  70px;
+}
+/* .BorderClass1:hover {
+    color:black;
+    text-align: justify;
+    border: 12px dotted green;
+    font-size: 50px;
+    margin: 16px;
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+
+} */
+.BorderClass1:hover {
+    background-color: #ffff00;
+}
